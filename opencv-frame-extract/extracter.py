@@ -12,7 +12,7 @@ os.system("mkdir {0}".format(path))
 
 start = time.time()
 print("starting timer")
-vidcap = cv2.VideoCapture('./sxf.mp4')
+vidcap = cv2.VideoCapture('../sxf.mp4')
 success,image = vidcap.read()
 count = 0
 while success:
