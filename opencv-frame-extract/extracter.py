@@ -15,7 +15,7 @@ print("starting timer")
 vidcap = cv2.VideoCapture('../sxf.mp4')
 success,image = vidcap.read()
 count = 0
-while success:
+while count < 100 and success:
   cv2.imwrite("sxf/frame%d.jpg" % count, image)     # save frame as JPEG file
   success,image = vidcap.read()
   # print('Read a new frame: ', str(count) if success else 'ERROR')

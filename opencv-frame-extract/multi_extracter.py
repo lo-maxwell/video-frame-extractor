@@ -7,7 +7,7 @@ import os
 import multiprocessing
 
 global vidcap
-movFile = 'sxf.mp4'
+movFile = '../sxf.mp4'
 vidcap = cv2.VideoCapture(movFile)
 #print('starting up cv2')
 
@@ -22,7 +22,7 @@ def extract_frame(frameNum):
 
 def main():
     path = 'sxf'
-    movFile = 'sxf.mp4'
+    movFile = '../sxf.mp4'
 
     global vidcap
     start = time.time()
@@ -44,7 +44,7 @@ def main():
     assert cores > 0, "Can't use {0} cpus!".format(cores)
 
     with multiprocessing.Pool(cores) as pool:
-        pool.map(extract_frame, range(0,min(int(numFrames), 50)))
+        pool.map(extract_frame, range(0,min(int(numFrames), 100)))
 
     end = time.time()
     print(end - start)
