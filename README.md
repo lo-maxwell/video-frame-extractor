@@ -9,4 +9,4 @@ OpenCV on GCP: 1254.6 seconds
 
 FFMPEG on GCP: 1018.0 seconds
 
-See https://medium.com/@alibugra/extract-frames-as-an-image-from-video-files-using-ffmpeg-65b52d3d97db
+Mplayer on GCP (uses ffmpeg underneath): 1453.3 seconds

@@ -1,12 +1,28 @@
 Run:
+```
 mplayer -vo jpeg ../../sxf.mp4
+```
 
 While in sxf directory
 
-use time(mplayer...) to get running time
+use
+```
+time(mplayer...)
+```
+to get running time
+
+Requires
+```
+sudo apt install mplayer
+```
+on Ubuntu
 
 Clear sxf directory with
-rm rf 
-or use 
+```
+rm -rf
+```
+or use
+```
 ls | grep -P ".*jpg" | xargs -d"\n" rm
+```
 to delete all jpg files in the current directory
